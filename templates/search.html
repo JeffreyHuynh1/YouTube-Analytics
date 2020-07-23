@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+<!-- <html class="home-bg"> -->
+
+</head>
+<body>
+
+  <div class="body">
+
+  <div class="topnav">
+  <a href="#home">Home</a>
+  <a class="active">YoutTuber Search</a>
+  <a href="#analytics">YouTuber Analytics</a>
+  <a href="#compare">YouTuber Comparison</a>
+  </div>
+
+  <img src= "{{ url_for('static',filename='images/img.png') }}">
+  <div class="box">
+    <h1> YouTuber Search </h1>
+    <form action="#" method="post">
+      <input id="mysearch" type="text" name="x" placeholder="Enter YouTuber Channel ID">
+      <input id="button" type="submit" name="" value="Search">
+    </form>
+  </div>
+</div>
+</body>
+</html>
